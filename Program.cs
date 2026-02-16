@@ -3,7 +3,9 @@
 var tasks = new List<ITask>
 {
     new SimpleTask("Buy groceries"),
-    new SimpleTask("Email professor")
+    new SimpleTask("Email professor"),
+    new TimedTask("Study algorithms", 45),
+    new RecurringTask("Take out trash", "Weekly")
 };
 
 foreach (var task in tasks)
